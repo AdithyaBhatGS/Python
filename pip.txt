@@ -1,0 +1,17 @@
+*pip->It is a tool/package manager in python
+
+*A package manager will be used to install and manage software packages.
+
+*Package->Collection of modules will form a package
+
+*Pip will basically go to the public repository and then finds the reuested package and installs it 
+
+*Install packages:
+
+pip install pkg_name
+
+*Uninstall packages:
+
+pip uninstall pkg_name
+
+Note:You can create your own package which contains sub packages and modules within it.

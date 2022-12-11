@@ -1,0 +1,227 @@
+Math Operators(highest to lowest precedence):
+
+**   ->power
+%    ->modulus(rem)
+//   ->flooredQuotient(int)
+/    ->quotient(float)
+*    ->product
++    ->add
+-    ->sub
+
+Comaparision Operators(returns a boolean value):
+
+>
+<
+==
+!=
+>=
+<=
+
+Logical Operators(returns a boolean value):
+
+and 
+or 
+not
+
+Membership Operators(returns a boolean value):
+
+Used to check if an object is present in the list or tuple or a string
+
+in 
+not in
+
+Identity Operators:
+
+They are used to check if two variables are pointing to same memory location 
+
+is->Returns true if 2 variables points to same memory location else false 
+
+not is->reverse of "is" 
+
+Bitwise Operators:
+
+Convert the data item to bits and then perform operations on them
+
+>>
+<<
+&
+|
+~
+^
+
+Common Data Types:
+    1)int 0,1,-2...
+    2)float 2.2,13.0,99.99992836...
+    3)string 'a','aaa','18 abc'...
+    4)bool True,False
+    5)None
+
+Classification of data types: 
+    1)Numeric types:int,float,complex
+    2)boolean
+    3)NoneType 
+    4)Sequence type:list,tuple,string(mutable) 
+    5)Set 
+    6)Dictionaries(mutable)
+
+Variable:
+*Container
+*Name of the memory which holds value
+*Rules:
+    1)Cannot start with a numerical value
+    2)Cannot have special characters
+    3)Alphabets(upper,lower,numerical,underscore) can be used
+
+Comments:
+
+*Comments ->
+Single line comments -> #.....
+Multiline comments ->'''.....'''
+
+Print on Console:
+
+print()
+
+Read Input from the user:
+
+input()
+By default it will read everything as a string
+
+TypeConversion:
+These are Constructors
+
+int()
+float()
+str()
+
+String methods:
+
+len()       ->returns the number of characters present in a string
+
+raw string  -> if we use 'r' then all the special characters 
+including escape sequences are ignored
+
+multiline strings -> To print multiline strings use:
+print('''Random string 
+        Random string''')
+
+isupper()   ->checks wheather each character of a string is in upper case and if yes return true else returns false
+
+islower()   ->checks wheather each character of a string is in 
+lower case and if yes return true else returns false
+
+upper()     ->converts all the character of a string to upper case character 
+
+lower()     ->converts all the character of a string to lower case character 
+
+isalpha()   ->string must not be empty ,means length should be atleast 1 character and each character must be either upper or lower case alphabet ,cannot contain space
+
+isalnum()   ->string must not be empty,means length should be
+atleast 1 character and each character can be a upper or lower case letter or a number ,cannot contain space
+
+isspace()   ->cannot be empty,means length should be atleast 1 character ,can have space,tab or new line character 
+
+isdecimal() ->cannot be empty,and can have only digits
+
+istitle()   ->cannot be empty and each word should begin with an   upper case character and all the other characters or the string should be in lower case 
+
+in          -> "str1" in "main_str"
+                If str1 is present in main_str then it will return true else false
+
+not in      -> "str1" not in "main_str"
+                If str1 is not present in main_str then it will return true else false
+
+startswith()->"main_str".startswith("str1")
+                If main_str start with str1 , it will return true else it will return false 
+                          
+endsswith()->"main_str".endsswith("str1")
+                If main_str ends with str1 , it will return true else it will return false 
+
+join()      ->(strings/separator/delimiter).join(iterables)
+
+                It will take a iterables(list,dictionaries,tuples) as parameter and convert it into a string
+
+                seperator-->appended at the end of each list item
+                means if we provide (",") at the end of each word in the list a "," will be added.
+
+split()     ->("main_str").split("empty/string")
+                It will convert a string to list of strings.
+
+                Whatever we pass in ("empty/string") ,it will become a base to split the main string.
+
+                If it is empty then we will simply split whenever we encounter a space.                
+            
+ljust()     ->string will be in the left most part 
+rjust()     ->string will be in the right most part 
+center()    ->string in the center 
+Note:We can give width as parameter inside ljust,rjust,center 
+An additional parameter would be any thing which we be used as a filler in the remaining space
+
+strip()     ->It will strip on both left and right ends.
+                If we don't specify anything then space will be
+                striped on both ends 
+                Else if we specify then that will be considered
+
+lstrip()    ->It will strip on the left end 
+
+rstrip()    ->It will strip on the right end
+
+ord()       ->It will return the ascii value(integer representation) of a character
+
+chr()       ->It will take integer as input and provides its character equivalent
+
+List methods:
+
+
+len(list_name) ->Used to get the number of list values in the list
+
+list concatenation,list replication,slices
+
+del(list_name[index_pos]) ->To delete the value in a particular index in the list
+
+in and not in Operators -> value in list_name ,value not in list_name
+
+list_name.index(value) -> returns the index of the respective value
+
+list_name.append(value) -> adds the value at the end of the list
+
+list_name.insert(index_pos,value) -> adds the value at a particular position in the list
+
+list_name.remove(value) -> used to remove the value present in the list
+
+list_name.sort()    ->  sorts orginal list 
+(But it will modify the orginal list)
+
+sorted(list_name)   -> returns a sorted list
+(Will not modify the orginal list)
+
+list_name.extend([value1,value2,value3....]) -> to add multiple elements into a list 
+(We need to pass a list into extend method)
+
+Tuple: 
+
+
+Tuples are immutable data types.
+Means we can add new values to it by concatenating 2 tuples into a new Tuple.
+But we cannot modify a Tuple.
+
+If you want to have a tuple with only 1 value then use->("Value1",)
+If we don't use a comma then it will be considered as a string 
+
+We can use same list methods for tuple as well.
+We can concatenate a tuple and slicing can be performed on it as well.
+
+But we cannot use methods like append as it is immutable.
+
+Note:
+
+In python mutable types are always pass by references whereas immutable types are pass by values 
+Ex:Dictionaries,List->Pass by references
+
+Tuples,String,Int ->Pass by values 
+
+Type Conversion:
+
+1)list(tuple_name)->A tuple will be converted into a list
+
+2)tuple(list_name)->A list will be converted into a tuple

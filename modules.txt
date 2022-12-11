@@ -1,0 +1,23 @@
+modules:
+
+*modules are prewritten code that can be reused
+
+*It provides code reusability
+
+*It is a file with .py extension which has predefined classes,functions and variables
+
+*Two types:
+1)Built in modules
+2)User defined modules
+
+1)Built in modules:
+
+They are predefined .No need to create these modules to use them.
+
+Ex: os,sys,math etc
+
+2)User defined modules:
+
+They are creted by the user.
+Once created we can reuse them.
+
