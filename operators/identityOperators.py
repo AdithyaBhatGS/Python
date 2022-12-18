@@ -9,9 +9,11 @@ if(b is a):
     print("Both a and b points to same object!")
 else:
     print("a and b points to different object!")
+
 print(f"Address of a:{id(a)}")
 print(f"Address of b:{id(b)}")
 print("---------------------")
+
 c="Ram"
 d="Raju" 
 
