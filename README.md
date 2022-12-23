@@ -50,4 +50,17 @@
 
 16.Loops
 
+17.Modules
+
+18.Pip
+
+19.Strings
+
+20.Tuples
+
+21.Type
+
+22.Type Conversion
+
+23.Variables
 
